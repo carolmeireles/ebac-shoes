@@ -40,6 +40,7 @@ header nav a {
 /*SECTION ABOUT STYLE*/
 
 #sobre-loja .container {
+    display: flex;
     padding: 26px 0;
     width: 100%;
 }
@@ -93,10 +94,9 @@ h2 {
     padding: 8px;
 }
 
-/*
 .produto img {
+    width: 100%;
 }
-*/
 
 li button {
     background-color: #1886fc;
@@ -111,4 +111,52 @@ li button {
 
 p {
     font-size: 15px;
+}
+
+.produtos p {
+    max-width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 640px) {
+    section .container {
+        display: block;
+    }
+
+    #sobre-loja .container {
+        display: block;
+    }
+
+    #sobre-loja .container div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sobre-loja h2 {
+        padding-top: 16px;
+        margin-right: 26px;
+    }
+
+    #sobre-loja p {
+        padding-right: 26px;
+    }
+
+    /*não tá funcionando*/
+
+    .produtos {
+        display: block;
+    }
+
+    #produtos {
+        display: block;
+    }
+
+    #produtos .container {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
 }
