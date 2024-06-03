@@ -74,8 +74,14 @@ h2 {
 /*SECTION PRODUCTS STYLE*/
 
 #produtos .container {
-    display: block;
     width: 100%;
+    display: block;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
 }
 
 #produtos ul {
@@ -87,11 +93,12 @@ h2 {
     padding: 8px;
 }
 
-#produtos ul li img {
-    width: 100%;
+/*
+.produto img {
 }
+*/
 
-ul li button {
+li button {
     background-color: #1886fc;
     color: #fff;
     border: none;
