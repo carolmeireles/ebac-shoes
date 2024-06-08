@@ -43,6 +43,7 @@ header nav a {
     display: flex;
     padding: 26px 0;
     width: 100%;
+    justify-content: space-between;
 }
 
 #sobre-loja p {
