@@ -146,7 +146,7 @@ section h2 {
 
     .produtos {
         display: grid;
-        grid-template-columns: repeat(3, 32.6%);
+        grid-template-columns: repeat(2, 49.5%);
         column-gap: 1%;
         row-gap: 5%;
     }
