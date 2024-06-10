@@ -70,7 +70,47 @@ section h2 {
 
 /* LISTA DE PRODUTOS */
 
+#produtos img {
+    width: 100%;
+}
 
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    list-style: none;
+}
+
+.produtos li {
+    padding-bottom: 16px;
+}
+
+.produtos h3 {
+    padding-top: 32px;
+}
+
+.produtos p {
+    padding: 16px 0;
+}
+
+.produtos button {
+    width: 100%;
+    background-color: #1886fc;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.produto p {
+    padding-bottom: 37.5px;
+}
+*/
 
 /* TABLET */
 
@@ -104,7 +144,36 @@ section h2 {
         margin-right: 0;
     }
 
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(3, 32.6%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    /*
+    .produtos li p {
+        padding-bottom: 16px;
+    }
+    */
+
 }
+
+/*
+
+@media screen and (min-width: 1023px) and (max-width: 1032px) {
+
+    .produtos li p {
+        padding-bottom: 16px;
+    }
+
+    .produtos li:nth-child(3) p {
+        padding-bottom: 34.5px;
+    }
+
+}
+
+*/
 
 /* MOBILE */
 
@@ -136,6 +205,18 @@ section h2 {
 
     #sobre-loja img {
         margin-right: 0;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos li {
+        margin-bottom: 16px;
+    }
+
+    .produto p {
+        padding: 16px 0;
     }
 
 }
